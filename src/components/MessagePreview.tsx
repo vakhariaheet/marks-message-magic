@@ -3,6 +3,14 @@ import { Button } from "@/components/ui/button";
 import { TestResult } from "@/pages/Index";
 import { Copy, Trash2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 export function MessagePreview({ 
   tests,
@@ -46,23 +54,35 @@ export function MessagePreview({
         
         {tests.length > 0 && (
           <div className="mb-4">
-            <h3 className="text-sm font-medium mb-2">Added Tests:</h3>
-            <div className="space-y-2">
-              {tests.map((test) => (
-                <div key={test.id} className="flex justify-between items-center bg-gray-50 p-2 rounded">
-                  <span className="text-sm">
-                    {test.name}: {test.obtainedMarks}/{test.totalMarks}
-                  </span>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => onRemoveTest(test.id)}
-                  >
-                    <Trash2 className="h-4 w-4 text-red-500" />
-                  </Button>
-                </div>
-              ))}
-            </div>
+            <h3 className="text-sm font-medium mb-2">Test Results:</h3>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Test Name</TableHead>
+                  <TableHead>Obtained Marks</TableHead>
+                  <TableHead>Total Marks</TableHead>
+                  <TableHead className="w-[50px]"></TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {tests.map((test) => (
+                  <TableRow key={test.id}>
+                    <TableCell>{test.name}</TableCell>
+                    <TableCell>{test.obtainedMarks}</TableCell>
+                    <TableCell>{test.totalMarks}</TableCell>
+                    <TableCell>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        onClick={() => onRemoveTest(test.id)}
+                      >
+                        <Trash2 className="h-4 w-4 text-red-500" />
+                      </Button>
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
           </div>
         )}
         
