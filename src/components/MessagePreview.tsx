@@ -25,10 +25,10 @@ export function MessagePreview({
     if (tests.length === 0) return "Please add some test results to generate a message.";
     
     const testsMessage = tests.map(test => 
-      `in ${test.name} I got ${test.obtainedMarks}/${test.totalMarks}`
-    ).join(", ");
+      `${test.name}: ${test.obtainedMarks}/${test.totalMarks}`
+    ).join("\n");
 
-    return `Hi Sir,\n\nJust wanted to update you about my test results - ${testsMessage}.\n\nThanks!\n\nRegards`;
+    return `Test Results:\n${testsMessage}\n\nRegards`;
   };
 
   const copyToClipboard = () => {
