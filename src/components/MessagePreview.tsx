@@ -28,7 +28,7 @@ export function MessagePreview({
       `${test.name}: ${test.obtainedMarks}/${test.totalMarks}`
     ).join("\n");
 
-    return `Here are my today's test marks:\n\n${testsMessage}\n\nRegards`;
+    return `Hello Sir,\nHere are my today's test marks:\n\n${testsMessage}\n\nRegards`;
   };
 
   const copyToClipboard = () => {
