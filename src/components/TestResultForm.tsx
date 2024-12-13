@@ -24,11 +24,6 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
   const [selectedTest, setSelectedTest] = useState<string>("");
   const [tests, setTests] = useState<Test[]>([]);
 
-  useEffect(() => {
-    const loadedTests = processTestData();
-    setTests(loadedTests || []);
-  }, []);
-
   const form = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -39,10 +34,19 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
   });
 
   useEffect(() => {
+    const loadedTests = processTestData();
+    setTests(loadedTests || []);
+  }, []);
+
+  useEffect(() => {
     if (selectedTest) {
+      const selectedTestData = tests.find(test => test.title === selectedTest);
       form.setValue("name", selectedTest);
+      if (selectedTestData?.totalQuestions) {
+        form.setValue("totalMarks", selectedTestData.totalQuestions.toString());
+      }
     }
-  }, [selectedTest, form]);
+  }, [selectedTest, tests, form]);
 
   const handleSubmit = (values: FormSchema) => {
     onSubmit({
