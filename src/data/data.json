@@ -1,0 +1,1372 @@
+{
+    "categories":[
+        {
+            "name":"Topic Wise",
+            "subjects":[
+                {
+                    "name":"Quant",
+                    "topics":[
+                        {
+                          "topic": "Seating Arrangement - Linear",
+                          "tests": [
+                            {
+                              "title": "Seating Arrangement - Linear (Easy)",
+                              "questions": "30 Qs. in 45 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": " Seating Arrangement - Linear (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Seating Arrangement - Linear (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Seating Arrangement - Circular",
+                          "tests": [
+                            {
+                              "title": "Seating Arrangement - Circular (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Seating Arrangement - Circular (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Seating Arrangement - Circular (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Seating Arrangement -Square (Mixed Level)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Logical Games",
+                          "tests": [
+                            {
+                              "title": "Logical Games (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Logical Games (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Logical Games (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Data Sufficiency-Logical",
+                          "tests": [
+                            {
+                              "title": "Data Sufficiency-Logical (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Data Sufficiency-Logical (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Data Sufficiency-Logical (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Data Sufficiency-Arithmetic",
+                          "tests": [
+                            {
+                              "title": "Data Sufficiency-Arithmetic (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Data Sufficiency-Arithmetic (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Data Sufficiency-Arithmetic (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Caselets",
+                          "tests": [
+                            {
+                              "title": "DI-Caselets (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI - Caselets (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "DI-Caselets (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Mixed Graphs",
+                          "tests": [
+                            {
+                              "title": "DI - Mixed Graphs(Easy)",
+                              "questions": "30 Qs. in 45 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI-Mixed Graph(Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "DI-Mixed Graph(Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Table",
+                          "tests": [
+                            {
+                              "title": "DI-Table (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI-Table (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "DI-Table(Difficult)",
+                              "questions": "15 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Bar Graph",
+                          "tests": [
+                            {
+                              "title": "DI-Bar Graph (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI-Bar Graph (Moderate)",
+                              "questions": "25 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "DI - Bar Graph (Difficult)",
+                              "questions": "18 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 18
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Line Graph",
+                          "tests": [
+                            {
+                              "title": "DI-Line Graph (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI-Line Graph (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Line Graphs ",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Pie Chart",
+                          "tests": [
+                            {
+                              "title": "DI - Pie Chart (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI-Pie Chart (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "DI-Pie Chart (Difficult)",
+                              "questions": "15 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Missing Data",
+                          "tests": [
+                            {
+                              "title": "DI - Missing Data (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI - Missing Data (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "DI - Missing Data (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Series",
+                          "tests": [
+                            {
+                              "title": "Series (Level Easy)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": true,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Series (Level Moderate)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": true,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Series (Level Hard)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Direction Sense",
+                          "tests": [
+                            {
+                              "title": "Direction Sense (Easy)",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": true,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Direction Sense (Moderate)",
+                              "questions": "15 Qs. in 25 mins",
+                              "isgiven": true,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Direction Sense (Hard) ",
+                              "questions": "15 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Blood Relations",
+                          "tests": [
+                            {
+                              "title": "Blood Relations (Easy)",
+                              "questions": "15 Qs. in 25 mins",
+                              "isgiven": true,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Blood Relations (Moderate)",
+                              "questions": "25 Qs. in 35 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Blood Relations (Hard)",
+                              "questions": "15 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Coding-Decoding",
+                          "tests": [
+                            {
+                              "title": "Coding-Decoding (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": true,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Coding-Decoding (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Coding-Decoding (Difficult)",
+                              "questions": "15 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Input-Output",
+                          "tests": [
+                            {
+                              "title": "Input-Output (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Input-Output (Moderate)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Input-Output (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Abstract Reasoning",
+                          "tests": [
+                            {
+                              "title": "Abstract Reasoning (Easy)",
+                              "questions": "20 Qs. in 35 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Abstract Reasoning (Medium)",
+                              "questions": "20 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Abstract Reasoning (Difficult)",
+                              "questions": "20 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Non-verbal Analogy",
+                              "questions": "15 Qs. in 15 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Non-Verbal Analogy",
+                              "questions": "15 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Binary Logic",
+                          "tests": [
+                            {
+                              "title": "Binary Logic (Easy)",
+                              "questions": "30 Qs. in 60 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Binary Logic (Moderate)",
+                              "questions": "25 Qs. in 60 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Binary Logic (Hard)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Critical Path",
+                          "tests": [
+                            {
+                              "title": "Critical Path (Easy)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Critical Path (Medium)",
+                              "questions": "24 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 24
+                            },
+                            {
+                              "title": "Critical Path (Difficult)",
+                              "questions": "15 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Games and Tournament",
+                          "tests": [
+                            {
+                              "title": "Games and Tournament (Easy)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Games and Tournament (Moderate)",
+                              "questions": "15 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Games and Tournaments (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Syllogism",
+                          "tests": [
+                            {
+                              "title": "Syllogism (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Syllogism (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Syllogism (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Cubes & Dices",
+                          "tests": [
+                            {
+                              "title": "Cube",
+                              "questions": "30 Qs. in 40 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Cube and Dice",
+                              "questions": "15 Qs. in 15 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Dice",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Dice",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Logical Consistency",
+                          "tests": [
+                            {
+                              "title": "Logical Consistency",
+                              "questions": "15 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Ranking",
+                          "tests": [
+                            {
+                              "title": "Ranking - 1",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Ranking - 2",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Alphabet  Test",
+                          "tests": [
+                            {
+                              "title": "Alphabet Test",
+                              "questions": "40 Qs. in 40 mins",
+                              "isgiven": false,
+                              "totalQuestions": 40
+                            },
+                            {
+                              "title": "Alphabet Test (Foundation)",
+                              "questions": "30 Qs. in 40 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Verbal Reasoning ",
+                          "tests": [
+                            {
+                              "title": "Statement - Cause & Effect/ Arguments",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Statement - Conclusions/Courses of Action/Arguments - 1",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Statement - Conclusions/Courses of Action/Arguments - 2",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Insert the Missing Character",
+                          "tests": [
+                            {
+                              "title": "Inserting The Missing Character",
+                              "questions": "10 Qs. in 10 mins",
+                              "isgiven": false,
+                              "totalQuestions": 10
+                            },
+                            {
+                              "title": "Insert the Missing Character",
+                              "questions": "20 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Matrix ",
+                          "tests": [
+                            {
+                              "title": "Figure Matrix",
+                              "questions": "10 Qs. in 15 mins",
+                              "isgiven": false,
+                              "totalQuestions": 10
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Venn Diagram",
+                          "tests": [
+                            {
+                              "title": "Logical Venn Diagrams (Class Test)",
+                              "questions": "30 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Coded Inequalities",
+                          "tests": [
+                            {
+                              "title": "Code Inequality",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Code Inequality",
+                              "questions": "25 Qs. in 35 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            }
+                          ]
+                        }
+                      ]
+                },{
+                    "name":"LR",
+                    "topics":[
+                        {
+                          "topic": "Seating Arrangement - Linear",
+                          "tests": [
+                            {
+                              "title": "Seating Arrangement - Linear (Easy)",
+                              "questions": "30 Qs. in 45 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": " Seating Arrangement - Linear (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Seating Arrangement - Linear (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Seating Arrangement - Circular",
+                          "tests": [
+                            {
+                              "title": "Seating Arrangement - Circular (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Seating Arrangement - Circular (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Seating Arrangement - Circular (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Seating Arrangement -Square (Mixed Level)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Logical Games",
+                          "tests": [
+                            {
+                              "title": "Logical Games (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Logical Games (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Logical Games (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Data Sufficiency-Logical",
+                          "tests": [
+                            {
+                              "title": "Data Sufficiency-Logical (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Data Sufficiency-Logical (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Data Sufficiency-Logical (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Data Sufficiency-Arithmetic",
+                          "tests": [
+                            {
+                              "title": "Data Sufficiency-Arithmetic (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Data Sufficiency-Arithmetic (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Data Sufficiency-Arithmetic (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Caselets",
+                          "tests": [
+                            {
+                              "title": "DI-Caselets (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI - Caselets (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "DI-Caselets (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Mixed Graphs",
+                          "tests": [
+                            {
+                              "title": "DI - Mixed Graphs(Easy)",
+                              "questions": "30 Qs. in 45 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI-Mixed Graph(Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "DI-Mixed Graph(Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Table",
+                          "tests": [
+                            {
+                              "title": "DI-Table (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI-Table (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "DI-Table(Difficult)",
+                              "questions": "15 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Bar Graph",
+                          "tests": [
+                            {
+                              "title": "DI-Bar Graph (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI-Bar Graph (Moderate)",
+                              "questions": "25 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "DI - Bar Graph (Difficult)",
+                              "questions": "18 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 18
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Line Graph",
+                          "tests": [
+                            {
+                              "title": "DI-Line Graph (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI-Line Graph (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Line Graphs ",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Pie Chart",
+                          "tests": [
+                            {
+                              "title": "DI - Pie Chart (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI-Pie Chart (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "DI-Pie Chart (Difficult)",
+                              "questions": "15 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "DI-Missing Data",
+                          "tests": [
+                            {
+                              "title": "DI - Missing Data (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "DI - Missing Data (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "DI - Missing Data (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Series",
+                          "tests": [
+                            {
+                              "title": "Series (Level Easy)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": true,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Series (Level Moderate)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": true,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Series (Level Hard)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Direction Sense",
+                          "tests": [
+                            {
+                              "title": "Direction Sense (Easy)",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": true,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Direction Sense (Moderate)",
+                              "questions": "15 Qs. in 25 mins",
+                              "isgiven": true,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Direction Sense (Hard) ",
+                              "questions": "15 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Blood Relations",
+                          "tests": [
+                            {
+                              "title": "Blood Relations (Easy)",
+                              "questions": "15 Qs. in 25 mins",
+                              "isgiven": true,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Blood Relations (Moderate)",
+                              "questions": "25 Qs. in 35 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Blood Relations (Hard)",
+                              "questions": "15 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Coding-Decoding",
+                          "tests": [
+                            {
+                              "title": "Coding-Decoding (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": true,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Coding-Decoding (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Coding-Decoding (Difficult)",
+                              "questions": "15 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Input-Output",
+                          "tests": [
+                            {
+                              "title": "Input-Output (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Input-Output (Moderate)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Input-Output (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Abstract Reasoning",
+                          "tests": [
+                            {
+                              "title": "Abstract Reasoning (Easy)",
+                              "questions": "20 Qs. in 35 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Abstract Reasoning (Medium)",
+                              "questions": "20 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Abstract Reasoning (Difficult)",
+                              "questions": "20 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Non-verbal Analogy",
+                              "questions": "15 Qs. in 15 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Non-Verbal Analogy",
+                              "questions": "15 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Binary Logic",
+                          "tests": [
+                            {
+                              "title": "Binary Logic (Easy)",
+                              "questions": "30 Qs. in 60 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Binary Logic (Moderate)",
+                              "questions": "25 Qs. in 60 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Binary Logic (Hard)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Critical Path",
+                          "tests": [
+                            {
+                              "title": "Critical Path (Easy)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Critical Path (Medium)",
+                              "questions": "24 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 24
+                            },
+                            {
+                              "title": "Critical Path (Difficult)",
+                              "questions": "15 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Games and Tournament",
+                          "tests": [
+                            {
+                              "title": "Games and Tournament (Easy)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            },
+                            {
+                              "title": "Games and Tournament (Moderate)",
+                              "questions": "15 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Games and Tournaments (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Syllogism",
+                          "tests": [
+                            {
+                              "title": "Syllogism (Easy)",
+                              "questions": "30 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Syllogism (Moderate)",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Syllogism (Difficult)",
+                              "questions": "20 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Cubes & Dices",
+                          "tests": [
+                            {
+                              "title": "Cube",
+                              "questions": "30 Qs. in 40 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            },
+                            {
+                              "title": "Cube and Dice",
+                              "questions": "15 Qs. in 15 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Dice",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            },
+                            {
+                              "title": "Dice",
+                              "questions": "25 Qs. in 30 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Logical Consistency",
+                          "tests": [
+                            {
+                              "title": "Logical Consistency",
+                              "questions": "15 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Ranking",
+                          "tests": [
+                            {
+                              "title": "Ranking - 1",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Ranking - 2",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Alphabet  Test",
+                          "tests": [
+                            {
+                              "title": "Alphabet Test",
+                              "questions": "40 Qs. in 40 mins",
+                              "isgiven": false,
+                              "totalQuestions": 40
+                            },
+                            {
+                              "title": "Alphabet Test (Foundation)",
+                              "questions": "30 Qs. in 40 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Verbal Reasoning ",
+                          "tests": [
+                            {
+                              "title": "Statement - Cause & Effect/ Arguments",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Statement - Conclusions/Courses of Action/Arguments - 1",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Statement - Conclusions/Courses of Action/Arguments - 2",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Insert the Missing Character",
+                          "tests": [
+                            {
+                              "title": "Inserting The Missing Character",
+                              "questions": "10 Qs. in 10 mins",
+                              "isgiven": false,
+                              "totalQuestions": 10
+                            },
+                            {
+                              "title": "Insert the Missing Character",
+                              "questions": "20 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 20
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Matrix ",
+                          "tests": [
+                            {
+                              "title": "Figure Matrix",
+                              "questions": "10 Qs. in 15 mins",
+                              "isgiven": false,
+                              "totalQuestions": 10
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Venn Diagram",
+                          "tests": [
+                            {
+                              "title": "Logical Venn Diagrams (Class Test)",
+                              "questions": "30 Qs. in 25 mins",
+                              "isgiven": false,
+                              "totalQuestions": 30
+                            }
+                          ]
+                        },
+                        {
+                          "topic": "Coded Inequalities",
+                          "tests": [
+                            {
+                              "title": "Code Inequality",
+                              "questions": "15 Qs. in 20 mins",
+                              "isgiven": false,
+                              "totalQuestions": 15
+                            },
+                            {
+                              "title": "Code Inequality",
+                              "questions": "25 Qs. in 35 mins",
+                              "isgiven": false,
+                              "totalQuestions": 25
+                            }
+                          ]
+                        }
+                      ]
+                }
+            ]
+        }
+    ]
+}
