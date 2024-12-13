@@ -21,7 +21,7 @@ type FormSchema = z.infer<typeof formSchema>;
 export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult, "id">) => void }) {
   const { toast } = useToast();
   const [open, setOpen] = useState(false);
-  const [selectedTest, setSelectedTest] = useState<string>("");
+  const [selectedTests, setSelectedTests] = useState<string[]>([]);
   const [tests, setTests] = useState<Test[]>([]);
 
   const form = useForm<FormSchema>({
@@ -39,27 +39,52 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
   }, []);
 
   useEffect(() => {
-    if (selectedTest) {
-      const selectedTestData = tests.find(test => test.title === selectedTest);
-      form.setValue("name", selectedTest);
+    if (selectedTests.length === 1) {
+      const selectedTestData = tests.find(test => test.title === selectedTests[0]);
+      form.setValue("name", selectedTests[0]);
       if (selectedTestData?.totalQuestions) {
         form.setValue("totalMarks", selectedTestData.totalQuestions.toString());
       }
+    } else if (selectedTests.length > 1) {
+      form.setValue("name", `${selectedTests.length} tests selected`);
+      const totalQuestions = selectedTests.reduce((total, testName) => {
+        const test = tests.find(t => t.title === testName);
+        return total + (test?.totalQuestions || 0);
+      }, 0);
+      form.setValue("totalMarks", totalQuestions.toString());
     }
-  }, [selectedTest, tests, form]);
+  }, [selectedTests, tests, form]);
 
   const handleSubmit = (values: FormSchema) => {
-    onSubmit({
-      name: values.name,
-      obtainedMarks: Number(values.obtainedMarks),
-      totalMarks: Number(values.totalMarks),
+    if (selectedTests.length === 0) {
+      toast({
+        title: "No tests selected",
+        description: "Please select at least one test.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    selectedTests.forEach(testName => {
+      const test = tests.find(t => t.title === testName);
+      onSubmit({
+        name: testName,
+        obtainedMarks: Number(values.obtainedMarks),
+        totalMarks: test?.totalQuestions || Number(values.totalMarks),
+      });
     });
+
     form.reset();
-    setSelectedTest("");
+    setSelectedTests([]);
     toast({
-      title: "Test added successfully",
-      description: "Your test result has been added to the list.",
+      title: "Tests added successfully",
+      description: `${selectedTests.length} test${selectedTests.length === 1 ? '' : 's'} added to the list.`,
     });
+  };
+
+  const handleClearAll = () => {
+    setSelectedTests([]);
+    form.reset();
   };
 
   return (
@@ -67,10 +92,11 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
       <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-6">
         <TestSelector
           tests={tests}
-          selectedTest={selectedTest}
-          onSelectTest={setSelectedTest}
+          selectedTests={selectedTests}
+          onSelectTest={setSelectedTests}
           open={open}
           onOpenChange={setOpen}
+          onClearAll={handleClearAll}
         />
         <div className="grid grid-cols-2 gap-4">
           <FormField
@@ -100,7 +126,7 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
             )}
           />
         </div>
-        <Button type="submit" className="w-full">Add Test Result</Button>
+        <Button type="submit" className="w-full">Add Test Results</Button>
       </form>
     </Form>
   );
