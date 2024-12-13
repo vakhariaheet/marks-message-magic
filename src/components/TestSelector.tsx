@@ -15,9 +15,10 @@ import {
 import { FormLabel } from "@/components/ui/form";
 import { cn } from "@/lib/utils";
 import { Check, ChevronsUpDown } from "lucide-react";
+import { Test } from "@/types/test.types";
 
 interface TestSelectorProps {
-  tests: any[];
+  tests: Test[];
   selectedTest: string;
   onSelectTest: (value: string) => void;
   open: boolean;
@@ -31,7 +32,7 @@ export function TestSelector({
   open,
   onOpenChange
 }: TestSelectorProps) {
-  // Ensure tests is always an array
+  // Ensure tests is always an array and never undefined
   const safeTests = Array.isArray(tests) ? tests : [];
 
   return (
@@ -54,26 +55,26 @@ export function TestSelector({
             <CommandInput placeholder="Search test..." />
             <CommandEmpty>No test found.</CommandEmpty>
             <CommandList>
-            <CommandGroup className="max-h-[300px] overflow-y-auto">
-              {safeTests.map((test) => (
-                <CommandItem
-                  key={test.title}
-                  value={test.title}
-                  onSelect={(currentValue) => {
-                    onSelectTest(currentValue === selectedTest ? "" : currentValue);
-                    onOpenChange(false);
-                  }}
-                >
-                  <Check
-                    className={cn(
-                      "mr-2 h-4 w-4",
-                      selectedTest === test.title ? "opacity-100" : "opacity-0"
-                    )}
-                  />
-                  {test.title}
-                </CommandItem>
-              ))}
-            </CommandGroup>
+              <CommandGroup className="max-h-[300px] overflow-y-auto">
+                {safeTests.map((test) => (
+                  <CommandItem
+                    key={test.title}
+                    value={test.title}
+                    onSelect={(currentValue) => {
+                      onSelectTest(currentValue === selectedTest ? "" : currentValue);
+                      onOpenChange(false);
+                    }}
+                  >
+                    <Check
+                      className={cn(
+                        "mr-2 h-4 w-4",
+                        selectedTest === test.title ? "opacity-100" : "opacity-0"
+                      )}
+                    />
+                    {test.title}
+                  </CommandItem>
+                ))}
+              </CommandGroup>
             </CommandList>
           </Command>
         </PopoverContent>

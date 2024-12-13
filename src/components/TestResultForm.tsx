@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 import { useState, useEffect } from "react";
 import { TestSelector } from "./TestSelector";
 import { processTestData } from "@/utils/testDataProcessor";
-import { TestResult } from "@/types/test.types";
+import { Test, TestResult } from "@/types/test.types";
 
 const formSchema = z.object({
   name: z.string().min(1, "Test name is required"),
@@ -22,16 +22,11 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
   const { toast } = useToast();
   const [open, setOpen] = useState(false);
   const [selectedTest, setSelectedTest] = useState<string>("");
-  const [tests, setTests] = useState<any[]>([]);
+  const [tests, setTests] = useState<Test[]>([]);
 
   useEffect(() => {
     const loadedTests = processTestData();
-    if (Array.isArray(loadedTests)) {
-      setTests(loadedTests);
-    } else {
-      setTests([]);
-      console.error('Failed to load tests data');
-    }
+    setTests(loadedTests || []);
   }, []);
 
   const form = useForm<FormSchema>({
@@ -43,6 +38,12 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
     },
   });
 
+  useEffect(() => {
+    if (selectedTest) {
+      form.setValue("name", selectedTest);
+    }
+  }, [selectedTest, form]);
+
   const handleSubmit = (values: FormSchema) => {
     onSubmit({
       name: values.name,
@@ -50,6 +51,7 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
       totalMarks: Number(values.totalMarks),
     });
     form.reset();
+    setSelectedTest("");
     toast({
       title: "Test added successfully",
       description: "Your test result has been added to the list.",

@@ -12,13 +12,13 @@ export const processTestData = (): Test[] => {
   const tests: Test[] = [];
   
   try {
-    typedData.categories.forEach(category => {
+    typedData.categories.forEach((category: any) => {
       if (category?.subjects && Array.isArray(category.subjects)) {
-        category.subjects.forEach(subject => {
+        category.subjects.forEach((subject: any) => {
           if (subject?.topics && Array.isArray(subject.topics)) {
-            subject.topics.forEach(topic => {
+            subject.topics.forEach((topic: any) => {
               if (topic?.tests && Array.isArray(topic.tests)) {
-                topic.tests.forEach(test => {
+                topic.tests.forEach((test: any) => {
                   if (test && test.title) {
                     tests.push({
                       title: test.title,
