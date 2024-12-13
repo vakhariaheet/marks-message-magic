@@ -583,7 +583,7 @@
                       }
                     ]
               },{
-                  "name":"LR",
+                  "name":"Logical Reasoning",
                   "topics":[
                       {
                         "topic": "Seating Arrangement - Linear",
@@ -1125,13 +1125,13 @@
                             "totalQuestions": 15
                           },
                           {
-                            "title": "Dice",
+                            "title": "Dice 1",
                             "questions": "25 Qs. in 30 mins",
                             "isgiven": false,
                             "totalQuestions": 25
                           },
                           {
-                            "title": "Dice",
+                            "title": "Dice 2",
                             "questions": "25 Qs. in 30 mins",
                             "isgiven": false,
                             "totalQuestions": 25
@@ -1263,6 +1263,398 @@
                         ]
                       }
                     ]
+              },{
+                "name":"General Knowledge",
+                "topics":[
+                  {
+                    "topic": "GK 2024 (Dec)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2024 (December)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2024 (Nov)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2024 (November)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": true,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2024 (November)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": true,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2024 (November)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": true,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2024 (November)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": true,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2024 (Oct)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2024 (October)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": true,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2024 (October)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": true,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2024 (October)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": true,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2024 (October)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": true,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2024 (Sept)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2024 (September)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2024 (September)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2024 (September)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2024 (September)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2024 (August)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2024 (August)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2024 (August)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2024 (August)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2024 (August)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2024 (July)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2024 (July)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2024 (July)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2024 (July)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2024 (July)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2024 (June)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2024 (June)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2024 (June)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2024 (June)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2024 (June)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2024 (May)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2024 (May)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2024 (May)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2024 (May)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2024 (May)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2024 (April)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2024 (April)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2024 (April)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2024 (April)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2024 (April)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2024 (March)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2024 (March)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2024 (March)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2024 (March)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2024 (March)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2024 (Feb)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2024 (February)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2024 (February)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2024 (February)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2024 (February)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2024 (Jan)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2024 (January)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2024 (January)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2024 (January)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2024 (January)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2023 (Dec)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2023 (December)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2023 (December)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2023 (December)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2023 (December)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  },
+                  {
+                    "topic": "GK 2023 (Nov)",
+                    "tests": [
+                      {
+                        "title": "Week - 1 MBA Entrance GK 2023 (November)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 2 MBA Entrance GK 2023 (November)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 3 MBA Entrance GK 2023 (November)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      },
+                      {
+                        "title": "Week - 4 MBA Entrance GK 2023 (November)",
+                        "questions": "15 Qs. in 15 mins",
+                        "isgiven": false,
+                        "totalQuestions": 15
+                      }
+                    ]
+                  }
+                ]
               }
           ]
       }

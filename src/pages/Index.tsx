@@ -13,8 +13,12 @@ export type TestResult = {
 const Index = () => {
   const [tests, setTests] = useState<TestResult[]>([]);
 
-  const addTest = (test: Omit<TestResult, "id">) => {
-    setTests([...tests, { ...test, id: crypto.randomUUID() }]);
+  const addTest = (test: Omit<TestResult, "id">[]) => {
+    const newTests = test.map((t) => ({
+      ...t,
+      id: Math.random().toString(36),
+    }));
+    setTests([...tests, ...newTests]);
   };
 
   const removeTest = (id: string) => {

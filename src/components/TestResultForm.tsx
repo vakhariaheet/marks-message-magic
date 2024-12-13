@@ -19,7 +19,7 @@ const formSchema = z.object({
 
 type FormSchema = z.infer<typeof formSchema>;
 
-export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult, "id">) => void }) {
+export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult, "id">[]) => void }) {
   const { toast } = useToast();
   const [open, setOpen] = useState(false);
   const [selectedTests, setSelectedTests] = useState<string[]>([]);
@@ -54,17 +54,13 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
       });
       return;
     }
-
-    values.testMarks.forEach(({ testName, obtainedMarks }) => {
-      const test = tests.find(t => t.title === testName);
-      if (test) {
-        onSubmit({
-          name: testName,
-          obtainedMarks: Number(obtainedMarks),
-          totalMarks: test.totalQuestions,
-        });
-      }
-    });
+    console.log(values);
+    const testResults = values.testMarks.map(({ testName, obtainedMarks }) => ({
+      name: testName,
+      obtainedMarks: Number(obtainedMarks),
+      totalMarks: tests.find(t => t.title === testName)?.totalQuestions || 0,
+    }));
+    onSubmit(testResults);
 
     form.reset();
     setSelectedTests([]);
