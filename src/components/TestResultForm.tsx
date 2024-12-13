@@ -11,9 +11,10 @@ import { processTestData } from "@/utils/testDataProcessor";
 import { Test, TestResult } from "@/types/test.types";
 
 const formSchema = z.object({
-  name: z.string().min(1, "Test name is required"),
-  obtainedMarks: z.string().refine((val) => !isNaN(Number(val)) && Number(val) >= 0, "Must be a valid number"),
-  totalMarks: z.string().refine((val) => !isNaN(Number(val)) && Number(val) > 0, "Must be a valid number greater than 0"),
+  testMarks: z.array(z.object({
+    testName: z.string(),
+    obtainedMarks: z.string().refine((val) => !isNaN(Number(val)) && Number(val) >= 0, "Must be a valid number"),
+  }))
 });
 
 type FormSchema = z.infer<typeof formSchema>;
@@ -27,9 +28,7 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
   const form = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: "",
-      obtainedMarks: "",
-      totalMarks: "",
+      testMarks: [],
     },
   });
 
@@ -39,21 +38,12 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
   }, []);
 
   useEffect(() => {
-    if (selectedTests.length === 1) {
-      const selectedTestData = tests.find(test => test.title === selectedTests[0]);
-      form.setValue("name", selectedTests[0]);
-      if (selectedTestData?.totalQuestions) {
-        form.setValue("totalMarks", selectedTestData.totalQuestions.toString());
-      }
-    } else if (selectedTests.length > 1) {
-      form.setValue("name", `${selectedTests.length} tests selected`);
-      const totalQuestions = selectedTests.reduce((total, testName) => {
-        const test = tests.find(t => t.title === testName);
-        return total + (test?.totalQuestions || 0);
-      }, 0);
-      form.setValue("totalMarks", totalQuestions.toString());
-    }
-  }, [selectedTests, tests, form]);
+    const testMarks = selectedTests.map(testName => ({
+      testName,
+      obtainedMarks: "",
+    }));
+    form.setValue("testMarks", testMarks);
+  }, [selectedTests, form]);
 
   const handleSubmit = (values: FormSchema) => {
     if (selectedTests.length === 0) {
@@ -65,13 +55,15 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
       return;
     }
 
-    selectedTests.forEach(testName => {
+    values.testMarks.forEach(({ testName, obtainedMarks }) => {
       const test = tests.find(t => t.title === testName);
-      onSubmit({
-        name: testName,
-        obtainedMarks: Number(values.obtainedMarks),
-        totalMarks: test?.totalQuestions || Number(values.totalMarks),
-      });
+      if (test) {
+        onSubmit({
+          name: testName,
+          obtainedMarks: Number(obtainedMarks),
+          totalMarks: test.totalQuestions,
+        });
+      }
     });
 
     form.reset();
@@ -98,34 +90,44 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
           onOpenChange={setOpen}
           onClearAll={handleClearAll}
         />
-        <div className="grid grid-cols-2 gap-4">
-          <FormField
-            control={form.control}
-            name="obtainedMarks"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Obtained Marks</FormLabel>
-                <FormControl>
-                  <Input type="number" placeholder="Enter obtained marks" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="totalMarks"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Total Marks</FormLabel>
-                <FormControl>
-                  <Input type="number" placeholder="Enter total marks" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
+        
+        {selectedTests.length > 0 && (
+          <div className="space-y-4">
+            {selectedTests.map((testName, index) => {
+              const test = tests.find(t => t.title === testName);
+              return (
+                <div key={testName} className="p-4 border rounded-lg space-y-4">
+                  <h3 className="font-medium">{testName}</h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <FormField
+                      control={form.control}
+                      name={`testMarks.${index}.obtainedMarks`}
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Obtained Marks</FormLabel>
+                          <FormControl>
+                            <Input type="number" placeholder="Enter obtained marks" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    <FormItem>
+                      <FormLabel>Total Marks</FormLabel>
+                      <Input 
+                        type="number" 
+                        value={test?.totalQuestions || ''} 
+                        disabled 
+                        className="bg-gray-100"
+                      />
+                    </FormItem>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+        
         <Button type="submit" className="w-full">Add Test Results</Button>
       </form>
     </Form>
