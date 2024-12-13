@@ -5,6 +5,7 @@ import {
   CommandGroup,
   CommandInput,
   CommandItem,
+  CommandList
 } from "@/components/ui/command";
 import {
   Popover,
@@ -52,6 +53,7 @@ export function TestSelector({
           <Command>
             <CommandInput placeholder="Search test..." />
             <CommandEmpty>No test found.</CommandEmpty>
+            <CommandList>
             <CommandGroup className="max-h-[300px] overflow-y-auto">
               {safeTests.map((test) => (
                 <CommandItem
@@ -72,6 +74,7 @@ export function TestSelector({
                 </CommandItem>
               ))}
             </CommandGroup>
+            </CommandList>
           </Command>
         </PopoverContent>
       </Popover>
