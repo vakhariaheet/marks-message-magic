@@ -4,8 +4,11 @@ import * as z from "zod";
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { TestResult } from "@/pages/Index";
 import { useToast } from "@/hooks/use-toast";
+import { useState, useEffect } from "react";
+import { TestSelector } from "./TestSelector";
+import { processTestData } from "@/utils/testDataProcessor";
+import { TestResult } from "@/types/test.types";
 
 const formSchema = z.object({
   name: z.string().min(1, "Test name is required"),
@@ -17,6 +20,20 @@ type FormSchema = z.infer<typeof formSchema>;
 
 export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult, "id">) => void }) {
   const { toast } = useToast();
+  const [open, setOpen] = useState(false);
+  const [selectedTest, setSelectedTest] = useState<string>("");
+  const [tests, setTests] = useState<any[]>([]);
+
+  useEffect(() => {
+    const loadedTests = processTestData();
+    if (Array.isArray(loadedTests)) {
+      setTests(loadedTests);
+    } else {
+      setTests([]);
+      console.error('Failed to load tests data');
+    }
+  }, []);
+
   const form = useForm<FormSchema>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -42,18 +59,12 @@ export function TestResultForm({ onSubmit }: { onSubmit: (test: Omit<TestResult,
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-6">
-        <FormField
-          control={form.control}
-          name="name"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Test Name</FormLabel>
-              <FormControl>
-                <Input placeholder="Enter test name" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
+        <TestSelector
+          tests={tests}
+          selectedTest={selectedTest}
+          onSelectTest={setSelectedTest}
+          open={open}
+          onOpenChange={setOpen}
         />
         <div className="grid grid-cols-2 gap-4">
           <FormField
