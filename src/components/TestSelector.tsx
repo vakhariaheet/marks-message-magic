@@ -19,6 +19,7 @@ import { Check, ChevronsUpDown, X } from 'lucide-react';
 import { Test } from '@/types/test.types';
 import data from '@/data/data.json';
 import { useEffect, useState } from 'react';
+
 interface TestSelectorProps {
 	tests: Test[];
 	selectedTests: string[];
@@ -35,12 +36,10 @@ export function TestSelector({
 	onOpenChange,
 	onClearAll,
 }: TestSelectorProps) {
-	const [testData, setTestData] = useState<
-		{
-			name: string;
-			tests: Test[];
-		}[]
-	>([]);
+	const [testData, setTestData] = useState<{
+		name: string;
+		tests: Test[];
+	}[]>([]);
 
 	useEffect(() => {
 		const subjects: {
@@ -51,16 +50,16 @@ export function TestSelector({
 		data.categories.forEach((category) => {
 			category.subjects.forEach((subject) => {
 				const tests: Test[] = [];
-				subject.topics.map((topic) => {
-					topic.tests.map((test) => {
-            tests.push({
-              title: test.title,
-              questions: test.questions,
-              isgiven: test.isgiven,
-              totalQuestions: test.totalQuestions,
-              topic: topic.topic,
-            });
-          });
+				subject.topics.forEach((topic) => {
+					topic.tests.forEach((test) => {
+						tests.push({
+							title: test.title,
+							questions: test.questions,
+							isgiven: test.isgiven,
+							totalQuestions: test.totalQuestions,
+							topic: topic.topic,
+						});
+					});
 				});
 				subjects.push({
 					name: subject.name,
@@ -70,6 +69,7 @@ export function TestSelector({
 		});
 		setTestData(subjects);
 	}, []);
+
 	const handleSelect = (value: string) => {
 		if (selectedTests.includes(value)) {
 			onSelectTest(selectedTests.filter((test) => test !== value));
@@ -117,11 +117,7 @@ export function TestSelector({
 						<CommandList>
 							{testData.map((subject) => (
 								<>
-									<CommandGroup
-										key={subject.name}
-										heading={subject.name}
-                    className="w-full"
-									>
+									<CommandGroup key={subject.name} heading={subject.name}>
 										{subject.tests.map((test) => (
 											<CommandItem
 												key={test.title}
@@ -133,7 +129,7 @@ export function TestSelector({
 														'mr-2 h-4 w-4',
 														selectedTests.includes(test.title)
 															? 'opacity-100'
-															: 'opacity-0',
+															: 'opacity-0'
 													)}
 												/>
 												{test.title}
@@ -143,23 +139,6 @@ export function TestSelector({
 									<CommandSeparator />
 								</>
 							))}
-							{/* <CommandGroup className="max-h-[300px] overflow-y-auto">
-                {tests.map((test) => (
-                  <CommandItem
-                    key={test.title}
-                    value={test.title}
-                    onSelect={() => handleSelect(test.title)}
-                  >
-                    <Check
-                      className={cn(
-                        "mr-2 h-4 w-4",
-                        selectedTests.includes(test.title) ? "opacity-100" : "opacity-0"
-                      )}
-                    />
-                    {test.title}
-                  </CommandItem>
-                ))}
-              </CommandGroup> */}
 						</CommandList>
 					</Command>
 				</PopoverContent>
